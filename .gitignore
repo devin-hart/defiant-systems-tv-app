@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build artifacts
+dist/
+build/
+out/
+coverage/
+.cache/
+.temp/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor and OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+# IDE/project files
+.vscode/
+.idea/
+*.iml
+
+# LightningJS generated or cache dirs
+.lightning/
+.blits/
+*.blits-cache
+
+# Optional: test output and reports
+test-results/
+*.spec.js.map
+
+# Optional: local server configs
+webpack-stats.json
