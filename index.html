@@ -6,8 +6,29 @@
       <link rel="icon" href="assets/favicon.svg" type="image/svg">
       <meta charset="UTF-8" />
     </head>
-    <body>
+    <body style="background-color: #000000;">
         <div id="app"></div>
         <script type="module" src="src/index.js"></script>
+        <!-- index.html (or the page hosting your Lightning app) -->
+<style>
+  /* the visualizer behind everything */
+  #vizOverlay {
+    position: absolute;
+    left: 360px; top: 240px;   /* your coords */
+    width: 960px; height: 160px;
+    pointer-events: none;
+    z-index: 0;                /* ↓ behind Lightning */
+  }
+
+  /* make sure the Lightning canvas sits above */
+  canvas { position: absolute; z-index: 2; }
+</style>
+
+<canvas id="vizOverlay" style="
+  position:absolute; left:0; top:0;
+  width:1920px; height:1080px;    /* CSS size */
+  pointer-events:none; z-index:0; /* behind Lightning */
+"></canvas>
+
     </body>
 </html>
