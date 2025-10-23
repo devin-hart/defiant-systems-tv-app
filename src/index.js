@@ -6,12 +6,4 @@ Blits.Launch(App, 'app', {
   h: 1080,
   debugLevel: 1,
   inspector: true,
-  defaultFont: 'opensans',
-  fonts: [
-    {
-      family: 'opensans',
-      type: 'web',
-      file: 'fonts/OpenSans-Medium.ttf',
-    },
-  ],
 })
